@@ -1,0 +1,11 @@
+{
+  "name": "websocket",
+  "description": "what's a websocket anyway",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtudury/websocket.git"
+  }
+}
