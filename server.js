@@ -3,6 +3,7 @@ const http = require('http')
 const fs = require('fs')
 const crypto = require('crypto')
 
+const PORT = process.env.PORT || 8080
 let sockets = []
 const history = []
 const renderHtml = () => `
@@ -71,7 +72,7 @@ http.createServer((req, res) => {
     res.writeHead(404)
     res.end('File not found.')
   }
-}).listen(8080)
+}).listen(PORT)
 
 function unframe(frame) {
   let i = 0
