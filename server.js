@@ -14,7 +14,7 @@ const renderHtml = () => `
 <textarea type="text"></textarea>${history.map(message => '<hr>' + message).join('\n')}
   <script>
     const textarea = document.querySelector('textarea')
-    const url = { 'http:': 'ws:', 'https:': 'wws:' }[window.location.protocol] + '//' + window.location.host
+    const url = { 'http:': 'ws:', 'https:': 'wss:' }[window.location.protocol] + '//' + window.location.host
     let ws
     function connect() {
       ws = new WebSocket(url)
