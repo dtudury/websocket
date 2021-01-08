@@ -28,7 +28,7 @@ const renderHtml = () => `
     }
     connect()
     textarea.addEventListener('keydown', e => {
-      if (e.keyCode !== 13 || !e.metaKey) return
+      if (e.keyCode !== 13) return
       console.log(e.target.value)
       ws.send(e.target.value)
       e.target.value = ''
